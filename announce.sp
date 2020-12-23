@@ -9,9 +9,6 @@
 
 #pragma newdecls required
 
-char discordLink[] = "https://www.discord.io/peakcs"; 
-char applyLink[] = "https://bit.ly/3arjxFs";
-
 public Plugin myinfo = 
 {
 	name = "Announce",
@@ -203,12 +200,12 @@ public void OnPluginStart()
 
 public Action command_discord(int client, int args) 
 {		
-	PrintToChat(client, "Our discord - \x0C%s", discordLink);
+	PrintToChat(client, "Our discord - \x0Chttps://www.discord.io/peakcs");
 	return Plugin_Handled;
 }
 
 public Action command_apply_admin(int client, int args) 
 {	
-	PrintToChat(client, "Want to apply for server admin? \x03%s", applyLink);
+	PrintToChat(client, "Want to apply for server admin? \x03https://bit.ly/3arjxFs");
 	return Plugin_Handled;
 }
